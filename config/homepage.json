@@ -1,0 +1,105 @@
+{
+  "intro": {
+    "captionLine1": "Birthed in the heart of",
+    "captionLine2": "Lagos Island, Nigeria"
+  },
+  "hero": {
+    "watermark": "HOUSE OF REST",
+    "verse": "Come to me, all who are weary and burdened, and I will give you rest.",
+    "verseRef": "Matthew 11:28"
+  },
+  "mission": {
+    "heading": "We've been called to create a church for those who gave up on church.",
+    "body": "House of Rest International is a community built for the unchurched, the de-churched, and the quietly searching. No performance. No pretence. Just people finding rest."
+  },
+  "identity": {
+    "left": "Rest",
+    "right": "Revival"
+  },
+  "pastor": {
+    "eyebrow": "Meet the Senior Pastor",
+    "headline": "A voice for the weary.",
+    "subheadline": "Led by conviction and compassion.",
+    "imageUrl": "/images/Image Sections/A voice for the weary/DSC_8388.jpg",
+    "ctaPrimary": { "label": "About the Pastor", "href": "/about" },
+    "ctaSecondary": { "label": "Watch a Message", "href": "/watch" }
+  },
+  "locations": [
+    "Lagos Island",
+    "Victoria Island",
+    "Lekki",
+    "Surulere",
+    "Abuja",
+    "Online"
+  ],
+  "locationsHeadline": "Faith that finds you wherever you are.",
+  "locationsBody": "Whether you're across the city or across the world, there's a seat for you at House of Rest. Join us in person or online every Sunday.",
+  "ministries": [
+    {
+      "num": "001",
+      "title": "Resters Glow Tribe",
+      "subtitle": "Junior Church",
+      "image": "/images/Image Sections/Glow tribe/DSC_7895.jpg",
+      "href": "/ministries/kids"
+    },
+    {
+      "num": "002",
+      "title": "Young Adults",
+      "subtitle": "Real conversations for real life",
+      "image": "/images/Image Sections/Young Adults/DSC_7846.JPG.jpeg",
+      "href": "/ministries/young-adults"
+    },
+    {
+      "num": "003",
+      "title": "Rester Queens",
+      "subtitle": "Women of Rest",
+      "image": "/images/Image Sections/Resters Queen/DSC_5466.JPG.jpeg",
+      "href": "/ministries/women"
+    },
+    {
+      "num": "004",
+      "title": "Rester Kings",
+      "subtitle": "Men of Rest",
+      "image": "/images/Mens-ministry.jpg",
+      "href": "/ministries/men"
+    },
+    {
+      "num": "005",
+      "title": "Guidance & Counselling",
+      "subtitle": "Marriage & Family",
+      "image": "/images/additional.jpg",
+      "href": "/ministries/marriage"
+    }
+  ],
+  "stats": [
+    {
+      "headline": "Years of Faithful Ministry",
+      "number": 10,
+      "suffix": "+",
+      "body": "Over a decade of building a community where people matter more than performance.",
+      "image": "/images/church-praying.jpg"
+    },
+    {
+      "headline": "Lives Touched Weekly",
+      "number": 500,
+      "suffix": "+",
+      "body": "Every Sunday, hundreds gather in-person and online to encounter rest for their souls.",
+      "image": "/images/choir-best.jpg"
+    },
+    {
+      "headline": "Nations Reached Online",
+      "number": 12,
+      "suffix": "+",
+      "body": "From Lagos to London, the message of rest travels without a passport.",
+      "image": "/images/Image Sections/The team/DSC_84322.jpg"
+    }
+  ],
+  "statsLabel": "A people helped by God",
+  "footerLinks": [
+    { "label": "Give", "href": "/give", "images": ["/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./DSC_4978.jpg", "/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.49.10 AM.jpeg"] },
+    { "label": "Watch", "href": "/watch", "images": ["/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.49.10 AM.jpeg", "/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./DSC_4978.jpg"] },
+    { "label": "Visit", "href": "/visit", "images": ["/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.49.20 AM.jpeg", "/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.46.14 AM.jpeg"] },
+    { "label": "Connect", "href": "/new", "images": ["/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.46.14 AM.jpeg", "/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.49.33 AM.jpeg"] },
+    { "label": "Pray", "href": "/prayer-request", "images": ["/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.49.33 AM.jpeg", "/images/Image Sections/Menu - Watch, about, visit, Ministries, events, blog, give./WhatsApp Image 2026-06-15 at 9.49.20 AM.jpeg"] }
+  ]
+}

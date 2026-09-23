@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ──────────────────────────────────────────────────────── */
+@theme {
+  /* Brand */
+  --color-primary:       #d83234;
+  --color-primary-dark:  #b52628;
+  --color-primary-light: #e85557;
+
+  /* Accents — original */
+  --color-accent-gold:  #f3b700;
+  --color-accent-amber: #faa300;
+  --color-accent-teal:  #114b5f;
+  --color-accent-green: #1a936f;
+
+  /* ── COZA Design Language accents ── */
+  --color-accent-pink:   #F3B700;
+  --color-accent-blue:   #FAA300;
+  --color-accent-indigo: #114B5F;
+  --color-accent-violet: #1A936F;
+
+  /* ── COZA Surfaces ── */
+  --color-coza-dark:          #1E1E1E;
+  --color-coza-elevated:      #2C2C2C;
+  --color-coza-cream:         #E9E3DD;
+  --color-coza-cream-shadow:  #d4c9bb;
+  --color-coza-fg-light:      #E1E1E1;
+
+  /* Neutrals — warm-tinted grays */
+  --color-off-white:      #faf8f5;
+  --color-off-black:      #1a1714;
+  --color-warm-gray-100:  #f5f2ee;
+  --color-warm-gray-200:  #e8e3dd;
+  --color-warm-gray-300:  #d4cdc5;
+  --color-warm-gray-400:  #b5ada3;
+  --color-warm-gray-500:  #8a8078;
+  --color-warm-gray-600:  #6b6159;
+  --color-warm-gray-700:  #504842;
+  --color-warm-gray-800:  #352e29;
+  --color-warm-gray-900:  #1a1714;
+
+  /* Typography — variables set by next/font on <html> */
+  --font-sans:              var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display:           var(--font-playfair), ui-serif, Georgia, serif;
+  --font-libre-baskerville: var(--font-lb), ui-serif, Georgia, serif;
+  --font-cormorant-garamond: var(--font-cg), ui-serif, Georgia, serif;
+
+  /* Easing */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* Radius */
+  --radius-card: 0.75rem;
+  --radius-pill: 9999px;
+
+  /* ── Display type scale ── */
+  --text-display-xs: 2rem;
+  --text-display-xs--line-height: 1.1;
+  --text-display-xs--letter-spacing: -0.02em;
+
+  --text-display-sm: 2.5rem;
+  --text-display-sm--line-height: 1.06;
+  --text-display-sm--letter-spacing: -0.025em;
+
+  --text-display-md: 3.25rem;
+  --text-display-md--line-height: 1.02;
+  --text-display-md--letter-spacing: -0.03em;
+
+  --text-display-lg: 4rem;
+  --text-display-lg--line-height: 0.97;
+  --text-display-lg--letter-spacing: -0.035em;
+
+  --text-display-xl: 5rem;
+  --text-display-xl--line-height: 0.95;
+  --text-display-xl--letter-spacing: -0.04em;
+
+  --text-display-2xl: 6.5rem;
+  --text-display-2xl--line-height: 0.92;
+  --text-display-2xl--letter-spacing: -0.045em;
+
+  /* ── Tracking ── */
+  --tracking-label: 0.12em;
+
+  /* ── Shadows ── */
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-card-hover: 0 4px 16px 0 rgb(0 0 0 / 0.1), 0 2px 4px -1px rgb(0 0 0 / 0.06);
+  --shadow-elevated: 0 10px 30px -5px rgb(0 0 0 / 0.15), 0 4px 6px -2px rgb(0 0 0 / 0.08);
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    /* COZA semantic aliases — reference these in arbitrary values or inline styles */
+    --bg-dark:          #1E1E1E;
+    --bg-elevated:      #2C2C2C;
+    --bg-cream:         #E9E3DD;
+    --bg-cream-shadow:  #d4c9bb;
+    --fg-light:         #E1E1E1;
+    --fg-dark:          #1E1E1E;
+    --accent-pink:      #F3B700;
+    --accent-blue:      #FAA300;
+    --accent-indigo:    #114B5F;
+    --accent-violet:    #1A936F;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-off-white);
+    color: var(--color-off-black);
+  }
+
+  /* Accessible focus rings — COZA dark on light, pink variant overridden per-component */
+  :focus-visible {
+    outline: 2px solid var(--color-coza-dark);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Sensible defaults for MDX / rich-text content areas */
+  .prose p          { margin-bottom: 1.25em; line-height: 1.8; }
+  .prose h2         { margin-top: 2em; margin-bottom: 0.75em; }
+  .prose h3         { margin-top: 1.75em; margin-bottom: 0.5em; }
+  .prose ul         { list-style: disc; padding-left: 1.5em; }
+  .prose ol         { list-style: decimal; padding-left: 1.5em; }
+  .prose li         { margin-bottom: 0.4em; }
+  .prose blockquote {
+    border-left: 3px solid var(--color-primary);
+    padding-left: 1.25em;
+    font-style: italic;
+    color: var(--color-warm-gray-600);
+  }
+  .prose h4         { margin-top: 1.5em; margin-bottom: 0.4em; font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; }
+  .prose strong     { font-weight: 700; color: var(--color-off-black); }
+  .prose em         { font-style: italic; }
+  .prose hr         { border: none; border-top: 1px solid var(--color-warm-gray-200); margin: 2.5em 0; }
+  .prose code       { font-family: ui-monospace, monospace; font-size: 0.875em; background: var(--color-warm-gray-100); padding: 0.15em 0.4em; border-radius: 4px; }
+  .prose pre        { background: var(--color-off-black); color: var(--color-warm-gray-200); padding: 1.25em; border-radius: 0.75rem; overflow-x: auto; margin: 1.5em 0; }
+  .prose pre code   { background: transparent; padding: 0; font-size: 0.85em; }
+  .prose a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+  }
+  .prose a:hover { text-decoration-color: currentColor; }
+  .prose > *:first-child { margin-top: 0; }
+  .prose > *:last-child  { margin-bottom: 0; }
+
+  /* Respect reduced motion everywhere */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ─── Utilities ──────────────────────────────────────────────────────────── */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ken-burns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+
+@keyframes float-1 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(6%, 4%) scale(1.06); }
+}
+
+@keyframes float-2 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-4%, -5%) scale(1.08); }
+}

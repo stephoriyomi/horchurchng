@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sunday-service",
+    "name": "Sunday Service",
+    "day": "Sunday",
+    "time": "9:00 AM",
+    "location": "Main Auditorium",
+    "address": {
+      "street": "TBD",
+      "city": "Lagos",
+      "state": "Lagos State",
+      "country": "Nigeria"
+    },
+    "directionsUrl": "https://maps.google.com/?q=House+of+Rest+International+Lagos+Nigeria",
+    "description": "Our main weekly gathering — worship, a message, and community for everyone."
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "House of Rest International",
+  "shortName": "HORI",
+  "tagline": "Creating a Church for Non-Church and Disgruntled Church Goers",
+  "description": "House of Rest International is a welcoming church community in Lagos, Nigeria — a space for anyone who has never tried church, walked away from it, or been hurt by it. Come exactly as you are.",
+  "url": "https://houseofresti.org",
+  "logo": "/images/logos/logo-colored.svg",
+  "ogImage": "/images/og-default.jpg",
+  "social": {
+    "instagram": "https://www.instagram.com/horchurchng/",
+    "youtube": "https://www.youtube.com/@horchurchng",
+    "facebook": "https://www.facebook.com/share/19GK1nztRr/?mibextid=wwXIfr",
+    "twitter": ""
+  },
+  "contact": {
+    "email": "hello@houseofresti.org",
+    "phone": "+234-000-000-0000",
+    "address": "123 Broad Street, Lagos Island"
+  }
+}

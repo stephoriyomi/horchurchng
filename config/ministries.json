@@ -1,0 +1,42 @@
+[
+  {
+    "id": "kids",
+    "name": "Resters Glow Tribe",
+    "slug": "kids",
+    "summary": "A safe and fun environment where we raise children who love God, understand His Word, live in obedience, and experience spiritual, moral, and social growth.",
+    "schedule": "Sundays at 9:00 AM · Ages 0–12",
+    "accentColor": "accent-gold"
+  },
+  {
+    "id": "young-adults",
+    "name": "Young Adults",
+    "slug": "young-adults",
+    "summary": "For the 18–35 crowd navigating careers, faith, relationships, and figuring out what you actually believe.",
+    "schedule": "Saturdays at 4:00 PM · Ages 18–35",
+    "accentColor": "accent-teal"
+  },
+  {
+    "id": "men",
+    "name": "Rester Kings",
+    "slug": "men",
+    "summary": "A community aimed at sustaining fellowship and strong connections among the men where everyone feels valued — fostering love for God, family, and society.",
+    "schedule": "First Saturday monthly at 7:00 AM",
+    "accentColor": "accent-green"
+  },
+  {
+    "id": "women",
+    "name": "Rester Queens",
+    "slug": "women",
+    "summary": "A massive network where classy ladies connect for all-round growth and development — a safe space where every lady is heard, celebrated, and encouraged.",
+    "schedule": "Third Saturday monthly at 9:00 AM WAT",
+    "accentColor": "primary-light"
+  },
+  {
+    "id": "marriage",
+    "name": "Guidance & Counselling",
+    "slug": "marriage",
+    "summary": "Professional faith-based counselling and mentoring to help people overcome struggles — with special focus on healthy marriages and families.",
+    "schedule": "Monthly sessions — check events",
+    "accentColor": "accent-amber"
+  }
+]

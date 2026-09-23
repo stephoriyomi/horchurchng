@@ -1,0 +1,10 @@
+[
+  {
+    "id": "senior-pastor",
+    "name": "Pastor [Name]",
+    "role": "Senior Pastor & Founder",
+    "bio": "Our founding pastor carries a deep conviction that the church should be a place of genuine rest and belonging for everyone — especially those who've never felt at home in one.",
+    "photo": "/images/staff/senior-pastor.jpg",
+    "order": 1
+  }
+]
